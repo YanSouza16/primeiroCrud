@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Alteração de produtos</title>
+        <title>Alteração de Usuario</title>
     </head>
     <body>
         <%
@@ -36,8 +36,8 @@
             st.setInt(5, i);
             st.setString(6, c);
             
-            st.executeUpdate(); //Executa o UPDATE
-            out.print("Os dados do produto " + c + " foram alterados com sucesso");
+            st.executeUpdate(); 
+            out.print("Os dados do Usuario " + c + " foram alterados com sucesso");
        } catch (Exception erro){
           out.print ("Entre em contato com o suporte e informe o erro " + erro.getMessage());
        }

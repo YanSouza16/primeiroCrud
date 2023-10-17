@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Listagem de produtos</title>
+        <title>Lista de Usuario</title>
         <link rel="stylesheet" href="tabela.css">
     </head>
     <body>
@@ -36,6 +36,7 @@
                 <th>CPF</th>
                 <th>Idade</th>
                 <th>Exclusão</th>
+                <th>Alterar</th>
             
             </tr>                
             <%
@@ -49,6 +50,7 @@
                 <td><%= rs.getString("cpf")%></td>
                 <td><%= rs.getInt("idade")%></td>
                 <td><a href="excUser.jsp?cpf=<%=rs.getString("cpf")%>">Excluir</a></td>
+                <td><a href="upUser.jsp?cpf=<%=rs.getString("cpf")%>">Alterar</a></td>
             </tr>
             <%
                 }

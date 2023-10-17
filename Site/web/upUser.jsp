@@ -32,7 +32,7 @@
          <form method="post" action="altUser.jsp">
             <p>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" value="<%= resultado.getString("nome") %>" readonly>
+                <input type="text" name="nome" id="nome" value="<%= resultado.getString("nome") %>" >
             </p>
             <p>
                 <label for="sobrenome">Sobrenome:</label>
@@ -52,7 +52,7 @@
             </p> 
             <p>
                 <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" value="<%= resultado.getString("cpf") %>">
+                <input type="text" name="cpf" id="cpf" value="<%= resultado.getString("cpf") %>"readonly>
             </p> 
                       
             <p>
